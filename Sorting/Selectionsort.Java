@@ -1,0 +1,45 @@
+class Solution {
+  public int[] selectionSort(int[] nums) {
+
+    for (int i = 0; i < nums.length - 1; i++) {
+      int min = i;
+      for (int j = i + 1; j < nums.length; j++) {
+
+        if (nums[j] < nums[min]) {
+          min = j;
+        }
+      }
+      if (min != i) {
+        int temp = nums[min];
+        nums[min] = nums[i];
+        nums[i] = temp;
+      }
+    }
+    return nums;
+  }
+}
+
+public class Main {
+
+  public static void main(String[] args) {
+    int[] arr = {7, 5, 9, 2, 8};
+
+    System.out.print("Original array: ");
+    for (int num : arr) {
+      System.out.print(num + " ");
+    }
+    System.out.println();
+
+    // create an instance of solution class
+    Solution solution = new Solution();
+
+    // function call for selection sort
+    int[] sortedArr = solution.selectionSort(arr);
+
+    System.out.print("Sorted array: ");
+    for (int num : sortedArr) {
+      System.out.print(num + " ");
+    }
+    System.out.println();
+  }
+}
