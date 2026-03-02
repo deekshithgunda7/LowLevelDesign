@@ -1,0 +1,19 @@
+backtrack(state):
+
+    if solution found:
+        add result
+        return
+
+    for each choice:
+        if valid:
+            make choice
+            backtrack(next_state)
+            undo choice
+
+
+1️⃣ Number of Islands
+2️⃣ Generate Parentheses
+3️⃣ Permutations
+4️⃣ Combination Sum
+5️⃣ Sudoku Solver
+6️⃣ Word Search II

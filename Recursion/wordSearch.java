@@ -3,7 +3,6 @@ class Solution {
 
         if(word.length() == index) return true;
         
-        
         if(i < 0 || j < 0 || i >= board.length || j >= board[0].length || board[i][j] != word.charAt(index)) return false;
 
         char temp = board[i][j];
