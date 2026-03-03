@@ -1,27 +1,6 @@
 class Solution {
-  public int[] selectionSort(int[] nums) {
 
-    for (int i = 0; i < nums.length - 1; i++) {
-      int min = i;
-      for (int j = i + 1; j < nums.length; j++) {
-
-        if (nums[j] < nums[min]) {
-          min = j;
-        }
-      }
-      if (min != i) {
-        int temp = nums[min];
-        nums[min] = nums[i];
-        nums[i] = temp;
-      }
-    }
-    return nums;
-  }
-}
-
-public class Main {
-
-  public static void main(String[] args) {
+   public static void main(String[] args) {
     int[] arr = {7, 5, 9, 2, 8};
 
     System.out.print("Original array: ");
@@ -42,4 +21,25 @@ public class Main {
     }
     System.out.println();
   }
+
+  public int[] selectionSort(int[] nums) {
+
+    for (int i = 0; i < nums.length - 1; i++) {
+      int min = i;
+      for (int j = i + 1; j < nums.length; j++) {
+
+        if (nums[j] < nums[min]) {
+          min = j;
+        }
+      }
+      if (min != i) {
+        int temp = nums[min];
+        nums[min] = nums[i];
+        nums[i] = temp;
+      }
+    }
+    return nums;
+  }
 }
+
+
