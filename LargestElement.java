@@ -1,5 +1,3 @@
-package LowLevelDesign.ArraysQuestions;
-
 class Solution {
     public int largestElement(int[] nums) {
         int max = nums[0];
