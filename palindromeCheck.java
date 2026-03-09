@@ -1,5 +1,5 @@
 class Solution {
-    
+
   public boolean palindromeCheck(String s) {
     // your code goes here
     int n = s.length();
@@ -16,4 +16,5 @@ class Solution {
 
     return palindrome(s, left + 1, right - 1);
   }
+  
 }
