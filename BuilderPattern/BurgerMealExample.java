@@ -24,6 +24,7 @@ class BurgerMeal{
     }
 
     public static class BurgerMealBuilder {
+        
         //Required parameters
         private final String bunType;
         private final String patty;
