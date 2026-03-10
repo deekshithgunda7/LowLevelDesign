@@ -94,3 +94,12 @@ public class BurgerMealExample {
         System.out.println(plainBurgerMeal);
     }
 }
+
+//create documentation for the above code
+/**
+ * This code demonstrates the Builder Design Pattern by creating a customizable BurgerMeal class.
+ * The BurgerMeal class has required parameters (bunType and patty) and optional parameters (hasCheese, sides, drink, toppings).
+ * The BurgerMealBuilder inner static class is used to construct a BurgerMeal object with a fluent interface.
+ * The main method shows how to create a fully customized burger meal and a plain burger meal using the builder.
+ */ 
+

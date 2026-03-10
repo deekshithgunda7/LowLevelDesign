@@ -71,5 +71,14 @@ public class LogisticsExample {
     }
 }
 
-//split the code into multiple files as per the class definitions
+// create documentation for the above code
+/**     
+ * The above code demonstrates the Factory Design Pattern using a logistics example. 
+ * It defines a Logistics interface with a send() method, and three concrete implementations: RoadLogistics, SeaLogistics, and AirLogistics.
+ * The LogisticsFactory class is responsible for creating instances of the concrete logistics classes based on a given type (road, sea, air).
+ * The LogisticsService class uses the LogisticsFactory to obtain the appropriate logistics object and call its send() method.
+ * In the main method, we create a LogisticsFactory and a LogisticsService, and then we test sending packages using different logistics types. An invalid type is also tested to demonstrate error handling.
+ */
+
+
 
