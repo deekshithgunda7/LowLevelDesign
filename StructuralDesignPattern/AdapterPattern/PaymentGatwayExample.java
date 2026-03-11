@@ -52,3 +52,18 @@ public class PaymentGatwayExample {
         paymentService2.processPayment(200.0, "ORDER456");
     }
 }
+
+//create documentation for the above code
+/**
+ * This code demonstrates the Adapter Design Pattern in the context of a payment gateway system.
+ * 
+ * The `PaymentGatway` interface defines a common method for processing payments. 
+ * The `PayPalPaymentGatway` class implements this interface to provide a specific implementation for PayPal.
+ * The `RazorPayGatway` class represents another payment gateway with a different method signature for processing payments.
+ * 
+ * The `RazorPayAdapter` class implements the `PaymentGatway` interface and adapts the `RazorPayGatway` to be used in the same way as the `PayPalPaymentGatway`.
+ * 
+ * The `PaymentService` class uses a `PaymentGatway` to process payments, allowing it to work with any payment gateway that implements the `PaymentGatway` interface.
+ * 
+ * In the `main` method, we demonstrate how to use both PayPal and RazorPay through the adapter, showing how the Adapter Pattern allows us to integrate different payment gateways seamlessly.
+ */
