@@ -76,3 +76,20 @@ class Main {
 }
 
 //create documentation for the above code
+/**
+ * This code demonstrates the Facade Design Pattern in the context of a movie ticket booking system.
+ * 
+ * The `MovieBookingFacade` class provides a simplified interface for booking a movie ticket, 
+ * abstracting away the complexities of multiple subsystems involved in the process.
+ * 
+ * The subsystems include:
+ * - `PaymentService`: Handles payment processing.
+ * - `SeatReservationService`: Manages seat reservations.
+ * - `NotificationService`: Sends booking confirmations to users.
+ * - `LoyaltyPointsService`: Manages loyalty points for users.
+ * - `TicketService`: Generates movie tickets.
+ * 
+ * The client code interacts with the `MovieBookingFacade` to book a movie ticket without needing to 
+ * directly interact with each individual service, thus simplifying the overall process and improving maintainability.
+ */
+
