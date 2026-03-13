@@ -1,3 +1,4 @@
+
 /*
    --- A  Singleton pattern ensures that class has only one instance
        throughout the application lifecycle and provides global access
