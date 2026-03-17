@@ -3,7 +3,9 @@ import java.util.HashMap;
 class Solution {
     // Variant 1: Check if two numbers sum to target using hashing
     public String twoSumExists(int[] arr, int target) {
+        
         HashMap<Integer, Integer> map = new HashMap<>();
+
         // Iterate over all elements
         for (int i = 0; i < arr.length; i++) {
             int complement = target - arr[i];
