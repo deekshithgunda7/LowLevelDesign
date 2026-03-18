@@ -17,6 +17,7 @@
 
 /// Eager Loading  -- Here we can only create one object eventhough
 //                    if you create mutiple instances..And its done during class loading time
+
 /// thread safe
 class JobAnalytics{
 
