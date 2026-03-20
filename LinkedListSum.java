@@ -6,7 +6,7 @@ class Solution {
 
         ListNode() { data = 0; next = null; }
         ListNode(int x) { data = x; next = null; }
-        ListNode(int x, ListNode next) { data = x; this.next = next; }
+        ListNode(int x, ListNode next) { data = x; this.next = next;}
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
